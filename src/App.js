@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './components/navbar';
+import Game from './components/game';
+import TetrisComponent from './components/tetris';
+import Farm from './components/farm';
+import Tasks from './components/tasks'; 
+import Friends from './components/friends';
+import LoadingScreen from './components/loading';
+import StartScreen from './components/start';
+import TappingGame from './components/tapp';
+import TelegramMiniApp from './components/mini';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <NavBar />
+        <div className="content">
+          {/* <Routes>
+            <Route path="/start" element={<StartScreen />} />
+            <Route path="/play" element={<TetrisComponent />} />
+            <Route path="/farm" element={<Farm />} />
+            <Route path="/earn" element={<Tasks />} />
+            <Route path="/friends" element={<Friends />} />
+            <Route path="/loading" element={<LoadingScreen />} />
+          
+          </Routes> */}
+          <TelegramMiniApp />
+        </div>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

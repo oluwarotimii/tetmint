@@ -1,0 +1,150 @@
+/* tetris.css */
+.tetris-container {
+  text-align: center;
+}
+
+.tetris-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game-info {
+  margin-bottom: 20px;
+}
+
+.game-container {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.held-piece-container,
+.gameboard-container,
+.piece-queue-container {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 10px;
+}
+
+.control-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.control-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.game-block {
+  margin: 0;
+  padding: 0;
+  width: 1.5em;
+  height: 1.5em;
+  border: 1px solid #ddd;
+}
+
+.piece-i {
+  background-color: #ec858b;
+}
+
+.piece-j {
+  background-color: #f1b598;
+}
+
+.piece-l {
+  background-color: #f8efae;
+}
+
+.piece-o {
+  background-color: #b5a677;
+}
+
+.piece-s {
+  background-color: #816e56;
+}
+
+.piece-t {
+  background-color: #b77c72;
+}
+
+.piece-z {
+  background-color: #e3be58;
+}
+
+.piece-preview {
+  background-color: #eee;
+}
+
+/* tetris.css */
+/* Existing styles */
+
+.controls-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  
+}
+
+.directional-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+  width: 200px;
+  border-radius: 50%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.horizontal-controls {
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+}
+.control-button {
+  margin: 5px;
+}
+.special-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
