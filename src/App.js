@@ -26,7 +26,7 @@ const App = () => {
             <Route path="/loading" element={<LoadingScreen />} />
           
           </Routes> */}
-          <TelegramMiniApp />
+          <TetrisComponent />
         </div>
       </div>
     </Router>
